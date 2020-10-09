@@ -121,12 +121,7 @@ const asyncExec = util_1.default.promisify(child_process_1.exec);
 const certificateFileName = process_1.env['TEMP'] + '\\certificate.pfx';
 const timestampUrl = 'http://timestamp.verisign.com/scripts/timstamp.dll';
 const signtool = 'C:/Program Files (x86)/Windows Kits/10/bin/10.0.17763.0/x86/signtool.exe';
-const signtoolFileExtensions = [
-    '.dll', '.exe', '.sys', '.vxd',
-    '.msix', '.msixbundle', '.appx',
-    '.appxbundle', '.msi', '.msp',
-    '.msm', '.cab', '.ps1', '.psm1'
-];
+const signtoolFileExtensions = ['.exe'];
 function sleep(seconds) {
     if (seconds > 0)
         console.log(`Waiting for ${seconds} seconds.`);
