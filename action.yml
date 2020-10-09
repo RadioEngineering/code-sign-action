@@ -16,6 +16,9 @@ inputs:
   password:
     description: 'The password'
     required: false
+  certificatesha1:
+    description: 'sha1 of the certificate to use'
+    required: false
 runs:
   using: 'node12'
   main: 'dist/index.js'
