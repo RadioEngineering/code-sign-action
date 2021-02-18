@@ -119,7 +119,7 @@ const child_process_1 = __webpack_require__(129);
 const process_1 = __webpack_require__(765);
 const asyncExec = util_1.default.promisify(child_process_1.exec);
 const certificateFileName = process_1.env['TEMP'] + '\\certificate.pfx';
-const timestampUrl = 'http://timestamp.globalsign.com/scripts/timestamp.dll';
+const timestampUrl = 'http://timestamp.comodoca.com/authenticode';
 const signtool = 'C:/Program Files (x86)/Windows Kits/10/bin/10.0.17763.0/x86/signtool.exe';
 const signtoolFileExtensions = ['.exe'];
 function sleep(seconds) {
